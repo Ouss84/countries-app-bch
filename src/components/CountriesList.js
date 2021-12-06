@@ -31,16 +31,16 @@ class CountriesList extends Component {
     });
 
     return (
-      <div className="">
+      <div className="flex flex-col  items-center bg-map  bg-no-repeat bg-contain z-0">
         <input
           type="text"
           name="search"
           placeholder="Enter a country ..."
-          className="focus:ring-2 focus:ring-gray-300"
+          className="focus:ring-2 focus:ring-gray-300 m-xl border-gray-400 text-5xl"
           onChange={this.searchHandler}
         ></input>
 
-        <div className="grid grid-cols-3 gap-4 justify-self-auto self-auto ">
+        <div className=" flex-1 grid grid-cols-3 gap-4 justify-self-auto self-auto ">
           {this.state.isLoading ? (
             <div className="loader">
               <div className="loading-gif">
@@ -50,7 +50,7 @@ class CountriesList extends Component {
           ) : (
             countries.map((item) => (
               <div key={item.name}>
-                <CountryCard {...item} />
+                <CountryCard className="z-10" {...item} />
               </div>
             ))
           )}

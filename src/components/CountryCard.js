@@ -16,7 +16,7 @@ const CountryCard = ({
     <Link to={capital}>
       <div
         key={name}
-        className="max-w-sm mx-auto bg-gray-600 bg-opacity-25 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 shadow-2xl flex-col  hover:bg-blue-100"
+        className="max-w-sm mx-auto bg-gray-600 bg-opacity-25 rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 shadow-2xl flex-col  hover:bg-blue-100 z-10"
       >
         <div className="ml-2 text-xl grid gap-1 ">
           <span className="font-bold">{name}</span>
