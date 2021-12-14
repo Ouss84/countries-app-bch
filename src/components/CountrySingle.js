@@ -97,7 +97,10 @@ class CountrySingle extends Component {
                   </span>
                   :
                 </p>
-                <p>Temperature: {this.state.weather.main.temp}</p>
+                <p>
+                  Temperature:
+                  <strong>{Math.floor(this.state.weather.main.temp)}</strong>
+                </p>
                 <div className="weather-description">
                   Weather description:
                   <span className="font-semibold">
